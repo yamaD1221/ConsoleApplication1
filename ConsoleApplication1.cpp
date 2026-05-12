@@ -8,13 +8,29 @@ int main()
 {
     std::string moji = "HelloWorld!";
 
-    for (int i = 0; i < 10; i++) {
-        if (i % 3 == 2) {
-            std::cout << std::string(moji.rbegin(), moji.rend()) << "\n";
-            
+    //for (int i = 0; i < 10; i++) {
+    //    if (i % 3 == 2) {
+    //        std::cout << std::string(moji.rbegin(), moji.rend()) << "\n";
+    //        
+    //    }
+    //    else {
+    //        std::cout << moji << "\n";
+    //    }
+    //}
+
+    auto forward = std::string("Hello World!");
+    auto reverse = forward;
+
+    std::reverse(reverse.begin(), reverse.end());
+
+    auto i = 10;
+
+    while (i--) {
+        if (i & 1) {
+            std::cout << reverse << std::endl;
         }
         else {
-            std::cout << moji << "\n";
+            std::cout << forward << std::endl;
         }
     }
 }
