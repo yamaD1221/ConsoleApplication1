@@ -9,7 +9,7 @@ int main()
     std::string moji = "HelloWorld!";
 
     for (int i = 0; i < 10; i++) {
-        if (i % 3 == 2) {
+        if (i % 2 == 0) {
             std::cout << std::string(moji.rbegin(), moji.rend()) << "\n";
             
         }
