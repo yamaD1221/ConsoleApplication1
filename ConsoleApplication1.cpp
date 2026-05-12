@@ -2,11 +2,20 @@
 //
 
 #include <iostream>
+#include <string>
 
 int main()
 {
-    for (int i = 0; i < 100; i++) {
-        std::cout << "Hello World!\n";
+    std::string moji = "HelloWorld!";
+
+    for (int i = 0; i < 10; i++) {
+        if (i % 3 == 2) {
+            std::cout << std::string(moji.rbegin(), moji.rend()) << "\n";
+            
+        }
+        else {
+            std::cout << moji << "\n";
+        }
     }
 }
 
